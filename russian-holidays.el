@@ -39,9 +39,9 @@
 ;; This works for for all regions noted in
 ;; https://ru.wikipedia.org/wiki/Праздники_России article.
 ;;
-;;  `holiday-russian-bashkir-holidays'
-;;  `holiday-russian-buryat-holidays'
-;;  `holiday-russian-tatar-holidays'
+;;  `holiday-russian-ad-holidays' for Adygea
+;;  `holiday-russian-ba-holidays' for Bashkiria
+;;  `holiday-russian-ta-holidays' for Tatarstan
 ;;  etc.
 ;;
 ;; The code inspired by german-holidays.el and ukrainian-holidays.el.

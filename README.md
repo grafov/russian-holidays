@@ -1,6 +1,4 @@
-# russian-holidays for Emacs calendar
-
-*Work in progress*
+# Russian holidays for Emacs calendar
 
 This mode adds Russian holidays for GNU/Emacs calendar. Russian
 Federation is multinational country with own holidays in different

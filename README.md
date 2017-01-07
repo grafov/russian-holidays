@@ -19,8 +19,7 @@ There is only limited subset of holidays added:
 * Only official state holidays counted.
 * It based on the modern data for last years so it not applicable to
   previous years or historical holidays.
-* It don't show holidays without fixed calendar dates (using lunar
-  calendar etc.)
+* It don't show holidays without fixed calendar dates yet (except Orthodox Easter)
 * For regional holidays only dates with official day offs counted (no
   memorial days etc.)
 
@@ -56,3 +55,7 @@ example Tatarstan `holiday-russian-ta-holidays`, Bashkortostan
 ## License
 
 GPLv3 for the code. Calendar data is public domain.
+
+## Future
+
+I am interesting add dates for Muslim holidays and for holidays based on lunar calendar.

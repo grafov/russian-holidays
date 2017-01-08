@@ -25,23 +25,25 @@ There is only limited subset of holidays added:
 
 ## Installation
 
-To use `holiday-russian-holidays` exclusively for the calendar:
+To use `russian-holidays` exclusively for the calendar:
 
 ```
- (setq calendar-holidays holiday-russian-holidays)
+ (require 'calendar)
+ (require 'russian-holidays)
+ (setq calendar-holidays russian-holidays)
 ```
 
-To use `holiday-russian-holidays` additionally to other calenders:
+To use `russian-holidays` additionally to other calenders:
 
 ```
- (setq calendar-holidays (append calendar-holidays holiday-russian-holidays))
+ (setq calendar-holidays (append calendar-holidays russian-holidays))
 ```
 
 If you'd like to add regional holidays, you can use it like in this
 example for Chuvash respublic (regional names use ISO-3166-2 codes):
 
 ```
- (setq calendar-holidays (append calendar-holidays holiday-russian-holidays holiday-russian-cu-holidays))
+ (setq calendar-holidays (append calendar-holidays russian-holidays russian-holidays-cu-holidays))
 ```
 
 This works for for all regions noted in
@@ -49,8 +51,8 @@ https://ru.wikipedia.org/wiki/Праздники_России article.
 
 Calendar variables use regional codes as described in
 [ISO 31666-2](https://ru.wikipedia.org/wiki/ISO_3166-2:RU). For
-example Tatarstan `holiday-russian-ta-holidays`, Bashkortostan
-`holiday-russian-ba-holidays` etc.
+example Tatarstan `russian-holidays-ta-holidays`, Bashkortostan
+`russian-holidays-ba-holidays` etc.
 
 ## License
 
@@ -58,4 +60,4 @@ GPLv3 for the code. Calendar data is public domain.
 
 ## Future
 
-I am interesting add dates for Muslim holidays and for holidays based on lunar calendar.
+I am interesting for calculating dates of Muslim and Buddhism holidays.

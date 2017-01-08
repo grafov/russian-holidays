@@ -1,4 +1,4 @@
-;;; russian-holidays.el --- Russian holidays for Emacs calendar
+;;; russian-holidays.el --- Russian holidays for the calendar
 
 ;; Author: Alexander I.Grafov <siberian@laika.name>
 ;; URL: https://github.com/grafov/russian-holidays

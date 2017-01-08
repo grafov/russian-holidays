@@ -23,25 +23,25 @@
 ;;
 ;; Installation:
 ;;
-;; To use `holiday-russian-holidays' exclusively for the calendar
+;; To use `russian-holidays-holidays' exclusively for the calendar
 ;;
-;;  (setq calendar-holidays holiday-russian-holidays)
+;;  (setq calendar-holidays russian-holidays)
 ;;
-;; To use 'holiday-russian-holidays' additionally to other calenders
+;; To use 'russian-holidays-holidays' additionally to other calenders
 ;;
-;;  (setq calendar-holidays (append calendar-holidays holiday-russian-holidays))
+;;  (setq calendar-holidays (append calendar-holidays russian-holidays))
 ;;
 ;; If you'd like to add regional holidays, you can use it like in this
 ;; example for Chuvash respublic
 ;;
-;;  (setq calendar-holidays (append calendar-holidays holiday-russian-holidays holiday-russian-chuvash-holidays))
+;;  (setq calendar-holidays (append calendar-holidays russian-holidays russian-holidays-ch-holidays))
 ;;
 ;; This works for for all regions noted in
 ;; https://ru.wikipedia.org/wiki/Праздники_России article.
 ;;
-;;  `holiday-russian-ad-holidays' for Adygea
-;;  `holiday-russian-ba-holidays' for Bashkiria
-;;  `holiday-russian-ta-holidays' for Tatarstan
+;;  `russian-holidays-ad-holidays' for Adygea
+;;  `russian-holidays-ba-holidays' for Bashkiria
+;;  `russian-holidays-ta-holidays' for Tatarstan
 ;;  etc.
 ;;
 ;; The code inspired by german-holidays.el and ukrainian-holidays.el.
@@ -53,7 +53,7 @@
 
 ; Holidays data based on the article
 ; https://ru.wikipedia.org/wiki/Праздники_России
-(defvar holiday-russian-holidays
+(defvar russian-holidays
   '((holiday-fixed 1 1 "Новый год") ; New Year day
     (holiday-fixed 1 2 "Новогодние каникулы") ; New Year holidays
     (holiday-fixed 1 3 "Новогодние каникулы") ; New Year holidays
@@ -76,31 +76,28 @@
     (holiday-fixed 11 4 "День народного единства")) ; Unity Day
   "Official state holidays in Russian Federation.")
 
-(defvar displayed-year nil
-  "It's bound in `calendar-generate'.")
-
 ; Regional holidays specific for Rebuplic of Adygea (Республика
 ; Адыгея)
-(defvar holiday-russian-ad-holidays
+(defvar russian-holidays-ad-holidays
   '((holiday-fixed 10 5 "День образования Республики Адыгея"))
   "Official holidays in Republic of Adygea of Russian Federation.")
 
 ; Regional holidays specific for Bashkir Rebuplic (Республика
 ; Башкортостан)
-(defvar holiday-russian-ba-holidays
+(defvar russian-holidays-ba-holidays
   '((holiday-fixed 10 11 "День Республики"))
   "Official holidays in Bashkortostan Republic of Russian Federation.")
 
 ; Regional holidays specific for Rebuplic of Dagestan (Республика
 ; Дагестан)
-(defvar holiday-russian-da-holidays
+(defvar russian-holidays-da-holidays
   '((holiday-fixed 7 26 "День Конституции Республики Дагестан")
 	(holiday-fixed 9 15 "День единства народов Дагестана"))
   "Official holidays in Republic of Dagestan of Russian Federation.")
 
 ; Regional holidays specific for Kabardino-Balkar Republic
 ; (Кабардино-Балкарская Республика)
-(defvar holiday-russian-kb-holidays
+(defvar russian-holidays-kb-holidays
   '((holiday-fixed 3 28 "День возрождения балкарского народа")
 	(holiday-fixed 5 21 "День памяти адыгов (черкесов)")
 	(holiday-fixed 9 1 "День Республики")
@@ -109,74 +106,74 @@
 
 ; Regional holidays specific for Republic of Kalmykia (Республика
 ; Калмыкия)
-(defvar holiday-russian-kl-holidays
+(defvar russian-holidays-kl-holidays
   '((holiday-fixed 4 5 "День принятия Степного Уложения (Конституции) Республики Калмыкии")
 	(holiday-fixed 12 28 "День памяти жертв депортации калмыцкого народа"))
   "Official holidays in Republic of Kalmykia of Russian Federation.")
 
 ; Regional holidays specific for Rebuplic of Karachay-Cherkessia
 ; (Карачаево-Черкесская Республика)
-(defvar holiday-russian-kc-holidays
+(defvar russian-holidays-kc-holidays
   '((holiday-fixed 5 3 "День возрождения карачаевского народа")
 	(holiday-fixed 7 3 "День единения народов Карачаево-Черкесской Республики")
 	(holiday-fixed 9 7 "День образования Карачаево-Черкесской Республики"))
   "Official holidays in Republic of Karachay-Cherkessia of Russian Federation.")
 
 ; Regional holidays specific for Komi Rebuplic (Республика Коми)
-(defvar holiday-russian-ko-holidays
+(defvar russian-holidays-ko-holidays
   '((holiday-fixed 8 22 "День Республики Коми"))
   "Official holidays in Komi Republic of Russian Federation.")
 
 ; Regional holidays specific for Rebuplic of Crimea (Республика Крым)
-(defvar holiday-russian-ko-holidays
+(defvar russian-holidays-ko-holidays
   '((holiday-fixed 3 18 "День воссоединения Крыма с Россией"))
   "Official holidays in Republic of Crimea of Russian Federation.")
 
 ; Regional holidays specific for Sakha Republic (Республика Саха
 ; (Якутия))
-(defvar holiday-russian-sa-holidays
+(defvar russian-holidays-sa-holidays
   '((holiday-fixed 4 27 "День Республики Саха (Якутия)")
 	(holiday-fixed 6 21 "Ысыах"))
   "Official holidays in Sakha Republic of Russian Federation.")
 
 ; Regional holidays specific for Tatarstan Republic (Республика
 ; Татарстан).
-(defvar holiday-russian-ta-holidays
+(defvar russian-holidays-ta-holidays
   '((holiday-fixed 8 30 "День Республики")
 	(holiday-fixed 11 6 "День Конституции Татарстана"))
   "Official holidays in Tatarstan Republic of Russian Federation.")
 
 ; Regional holidays specific for Rebuplic of Udmurtia (Республика
 ; Удмуртия)
-(defvar holiday-russian-ud-holidays
+(defvar russian-holidays-ud-holidays
   '((holiday-fixed 11 4 "День государственности Удмуртии"))
   "Official holidays in Republic of Udmurtia of Russian Federation.")
 
 ; Regional holidays specific for Chechen Rebuplic (Чеченская
 ; Республика)
-(defvar holiday-russian-ce-holidays
+(defvar russian-holidays-ce-holidays
   '((holiday-fixed 3 23 "День Конституции Чеченской Республики")
 	(holiday-fixed 4 16 "День мира в Чеченской республике"))
   "Official holidays in Chechen Republic of Russian Federation.")
 
 ; Regional holidays specific for Chuvash Rebuplic (Чувашская
 ; республика)
-(defvar holiday-russian-cu-holidays
+(defvar russian-holidays-cu-holidays
   '((holiday-fixed 6 24 "День Республики"))
   "Official holidays in Chuvash Republic of Russian Federation.")
 
 ; Regional holidays specific for Penza Oblast (Пензенская область)
-(defvar holiday-russian-pnz-holidays
+(defvar russian-holidays-pnz-holidays
   '((russian-holidays-eastern-nth 9 "Радоница - день поминовения усопших"))
   "Official holidays in Penza Oblast of Russian Federation.")
 
 ; Regional holidays specific for Saratov Oblast (Саратовская область)
-(defvar holiday-russian-sar-holidays
+(defvar russian-holidays-sar-holidays
   '((russian-holidays-eastern-nth 9 "Радоница - день поминовения усопших"))
   "Official holidays in Penza Oblast of Russian Federation.")
 
 ; Regional holidays specific for Sebastopol city (город Севастополь)
-(defvar holiday-russian-sebastopol-holidays
+(defvar russian-holidays-sebastopol-holidays
   '((holiday-fixed 3 18 "День возвращения города Севастополя в Россию "))
   "Official holidays in Sebastopol of Russian Federation.")
 

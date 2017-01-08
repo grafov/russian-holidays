@@ -1,8 +1,6 @@
 # Russian holidays for Emacs calendar
 
-This mode adds Russian holidays for GNU/Emacs calendar. Russian
-Federation is multinational country with own holidays in different
-regions. Official regional holidays added too.
+This mode adds Russian holidays for GNU/Emacs calendar. Russian Federation is multinational country with own holidays in different regions. The package has info about official state holidays and official regional holidays.
 
 ## Sources of data
 

@@ -1,4 +1,5 @@
-# Russian holidays for Emacs calendar
+# Russian holidays for Emacs calendar [![MELPA Stable](https://stable.melpa.org/packages/russian-holidays-badge.svg)](https://stable.melpa.org/#/russian-holidays) [![MELPA](https://melpa.org/packages/russian-holidays-badge.svg)](https://melpa.org/#/russian-holidays) 
+
 
 This mode adds Russian holidays for GNU/Emacs calendar. Russian Federation is multinational country with own holidays in different regions. The package has info about official state holidays and official regional holidays.
 

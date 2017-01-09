@@ -2,7 +2,7 @@
 
 ;; Author: Alexander I.Grafov <siberian@laika.name>
 ;; URL: https://github.com/grafov/russian-holidays
-;; Version: 0.2
+;; Version: 0.4
 
 ;; This file is not part of GNU Emacs
 
@@ -21,13 +21,16 @@
 
 ;;; Commentary:
 ;;
+;; The list of official Russian holidays and commemorative days that
+;; are day offs. With regional holidays included.
+;;
 ;; Installation:
 ;;
-;; To use `russian-holidays-holidays' exclusively for the calendar
+;; To use `russian-holidays' exclusively for the calendar
 ;;
 ;;  (setq calendar-holidays russian-holidays)
 ;;
-;; To use 'russian-holidays-holidays' additionally to other calenders
+;; To use 'russian-holidays' additionally to other calenders
 ;;
 ;;  (setq calendar-holidays (append calendar-holidays russian-holidays))
 ;;
